@@ -27,3 +27,9 @@ opzet:
     compileer en voer uit:
         npm run build
         npm start
+
+
+### Start Live Server
+1. Klik met de rechtermuisknop op index.html in de dist-map in de Explorer (linkerzijbalk in VS Code).
+2. Kies de optie "Open with Live Server".
+3. Je browser zou automatisch moeten openen en index.html weergeven.

@@ -1,1 +1,2 @@
-console.log('Hello, TypeScript!');
+// grab elements in our DOM
+const inputField = document.getElementById('amount');
