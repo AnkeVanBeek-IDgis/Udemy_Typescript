@@ -2,7 +2,7 @@
   "name": "udemy_typescript",
   "version": "1.0.0",
   "description": "opzet:\r     npm init -y\r     npm install typescript --save-dev\r     npx tsc --init",
-  "main": "index.js",
+  "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
