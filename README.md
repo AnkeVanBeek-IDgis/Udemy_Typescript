@@ -29,10 +29,20 @@ opzet:
         npm start
 
 
+### check welke versie TypeScript:
+installeren lokaal in projectmap: npm install --save-dev typescript
+controle versie: npx tsc --version
+
 ### Start Live Server
 1. Klik met de rechtermuisknop op index.html in de dist-map in de Explorer (linkerzijbalk in VS Code).
 2. Kies de optie "Open with Live Server".
 3. Je browser zou automatisch moeten openen en index.html weergeven.
 
-### opnieuw build:
+### opnieuw build (is niet meer nodig door regel 'watch' in package.json)
 npx tsc src/script.ts --outDir dist
+
+
+lijkt nog niet juist, ik doe nu:
+- npx tsc src/script.ts --outDir dist
+<!-- - npx tsc --watch -->
+- rechtermuis op index.html (open with live server)

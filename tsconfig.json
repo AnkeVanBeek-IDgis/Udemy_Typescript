@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "outDir": "./dist",
-    "lib": [ "dom", "dom.iterable", "es5", "es6"],
+    "lib": [ "dom", "dom.iterable", "es5", "es6", "es2017"],
     "module": "es6",
     "target": "es2017",
     "jsx": "react-jsx",
@@ -9,6 +9,7 @@
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
+    "noUnusedLocals": false,         //deze zorgt voor controle op ongebruikte variabelen
 
     "skipLibCheck": true,
     "esModuleInterop": true,
