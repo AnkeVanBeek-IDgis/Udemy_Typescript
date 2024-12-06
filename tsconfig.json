@@ -2,8 +2,25 @@
   "compilerOptions": {
     "outDir": "./dist",
     "lib": [ "dom", "dom.iterable", "es5", "es6", "es2017"],
+      // Betekenis: lib bepaalt welke ingebouwde API’s beschikbaar zijn tijdens het compileren. 
+      // Dit beïnvloedt de typecontrole en voorkomt fouten als je functies probeert te gebruiken die niet 
+      // worden ondersteund door je target runtime (bijvoorbeeld de browser of Node.js).
+      // Relatie met je project: Met lib: ["dom", "dom.iterable", "es5", "es6", "es2017"] heb je toegang tot zowel 
+      // browser-API’s als moderne ECMAScript-functionaliteit. Dit is nuttig als je bijvoorbeeld een webapplicatie 
+      // ontwikkelt die moderne features gebruikt.
     "module": "es6",
+      // Betekenis: Dit bepaalt hoe TypeScript module-definities transpileert. Het beïnvloedt de manier waarop modules worden
+      // geïmporteerd en geëxporteerd (import/export) in de gegenereerde JavaScript-code.
+      // Met module: "es6" worden de import/export-statements intact gelaten in de output. 
+      // Dit is ideaal voor moderne browsers of tools zoals Webpack en Vite die ES Modules ondersteunen.
     "target": "es2017",
+      // Betekenis: Dit bepaalt naar welke ECMAScript-versie TypeScript je code transpileert.
+      // Het beïnvloedt welke JavaScript-syntaxis TypeScript gebruikt in de output.
+      // Bijvoorbeeld, als je target instelt op es5, zal TypeScript moderne syntaxis zoals let en const transpilen naar
+      // oudere versies zoals var.
+      // Met target: "es2017" zal TypeScript de meeste moderne syntaxis (zoals async/await) intact laten in de output, 
+      // omdat moderne browsers deze natively ondersteunen.
+
     "jsx": "react-jsx",
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
